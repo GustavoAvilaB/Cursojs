@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgba(187, 136, 145, 0.753), rgba(139, 0, 139, 0.575), rgba(230, 171, 181, 0.781));
+            font-family: Arial, sans-serif;
+    }
+    </style>
+</head>
+<body>
+        <h1>Iniciando estudos DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg">Clique aqui</div>
+        <script>
+            var d = document.getElementById('msg');
+            d.style.backgroundColor = 'lightPink';
+            d.innerHTML = 'Clique aqui para ver o resultado';
+            //window.document.getElementById('msg').innerText = 'Clique aqui para ver o resultado';
+            
+        </script>     
+</body>
